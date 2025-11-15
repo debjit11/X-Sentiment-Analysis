@@ -1,52 +1,59 @@
-# X-Sentiment-Analysis
+# X-Sentiment-Analysis 🐦
 
-A complete Twitter sentiment analysis system built using the **Sentiment140 dataset** (1.6M tweets).  
-This project demonstrates full NLP preprocessing, feature extraction, machine learning model training, and sentiment prediction.
+**A simple, easy-to-run Twitter (X) sentiment analysis system built using the Sentiment140 dataset.**
 
 ---
 
 ## Table of Contents
 
-- [About](#about)
-- [Features](#features)
-- [Repository Structure](#repository-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Dataset](#dataset)
-- [Run / Usage](#run--usage)
-- [How the Model Works (high level)](#how-the-model-works-high-level)
-- [Retrain / Rebuild](#retrain--rebuild)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
+* [About](#about)
+* [Features](#features)
+* [Repository Structure](#repository-structure)
+* [Prerequisites](#prerequisites)
+* [Installation](#installation)
+* [Dataset](#dataset)
+* [Run / Usage](#run--usage)
+* [How the Model Works (high level)](#how-the-model-works-high-level)
+* [Retrain / Rebuild](#retrain--rebuild)
+* [Troubleshooting](#troubleshooting)
+* [Contributing](#contributing)
+* [Acknowledgements](#acknowledgements)
 
 ---
 
 ## About
 
-This repository contains a **Sentiment Analysis** model that classifies tweets into **Positive**, **Negative**, or **Neutral** using machine learning.  
-All steps—data cleaning, preprocessing, TF-IDF vectorization, model training, and evaluation—are implemented in a Jupyter notebook (`sentiment_model.ipynb`).
+This repository contains a sentiment analysis pipeline for tweets on the X (formerly Twitter) platform.  
+It uses the **Sentiment140** dataset containing **1.6M+ labeled tweets**.  
 
-The project uses the **Sentiment140 Kaggle dataset**, widely used for Twitter sentiment research.
+The project includes:
+
+- A complete Jupyter notebook demonstrating preprocessing, feature extraction, model training, and evaluation.  
+- Saved model/vectorizer files for quick prediction.  
+- Optional script to classify custom tweets.
 
 ---
 
 ## Features
 
-- Full NLP preprocessing pipeline  
-- Machine learning models (Logistic Regression, Naive Bayes, SVM, Random Forest)  
-- TF-IDF and n-gram based feature engineering  
-- Visualizations & evaluation metrics  
-- Predict sentiment for custom input text  
-- Easy to retrain / modify  
+* End-to-end NLP pipeline: cleaning, tokenization, stop-word removal, stemming/lemmatization  
+* TF-IDF vectorization with optional n-grams  
+* Machine-learning models such as Logistic Regression / SVM / Naive Bayes (based on your repo setup)  
+* Confusion matrix & evaluation metrics  
+* Predict sentiment for custom user-input text  
+* Easy retraining and extension  
 
 ---
 
 ## Repository Structure
 
 X-Sentiment-Analysis/
-├─ sentiment_model.ipynb # Main notebook: cleaning → vectorizing → training
-├─ dataset/ # Dataset (optional)
-├─ requirements.txt # Dependencies
-├─ models/ # Trained models (optional)
-└─ README.md
+* ├─ .gitignore
+* ├─ README.md # Documentation
+* ├─ x_analysis.ipynb # Notebook: full sentiment analysis pipeline
+* ├─ vectorizer.pkl # Saved vectorizer (TF-IDF)
+* ├─ logistic.pkl # Trained model for sentiment prediction
+*  ─ requirements.txt # Python dependencies
+* ├─ dataset/ # (optional) Place raw/processed data here
+* └─ app.py (optional) # Script for real-time sentiment prediction
+
