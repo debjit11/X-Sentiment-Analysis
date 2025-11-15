@@ -1,4 +1,4 @@
-# 🐦 X-Sentiment-Analysis
+# X-Sentiment-Analysis
 
 A complete Twitter sentiment analysis system built using the **Sentiment140 dataset** (1.6M tweets).  
 This project demonstrates full NLP preprocessing, feature extraction, machine learning model training, and sentiment prediction.
