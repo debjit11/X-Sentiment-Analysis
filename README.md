@@ -57,3 +57,37 @@ X-Sentiment-Analysis/
 * ├─ dataset/ # (optional) Place raw/processed data here
 * └─ app.py (optional) # Script for real-time sentiment prediction
 
+
+> Modify the names above if your repo structure differs.
+
+---
+
+## Prerequisites
+
+* Python 3.13
+* Git
+* Jupyter Notebook / JupyterLab (optional)
+
+---
+
+## Installation
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/debjit11/X-Sentiment-Analysis.git
+cd X-Sentiment-Analysis
+
+# 2. Create and activate a virtual environment
+# macOS / Linux
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Windows (PowerShell)
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+# 3. Install dependencies
+pip install --upgrade pip
+pip install -r requirements.txt
+
+
