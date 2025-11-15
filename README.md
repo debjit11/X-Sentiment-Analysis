@@ -1,4 +1,4 @@
-# X-Sentiment-Analysis 🐦
+# X-Sentiment-Analysis 
 
 **A simple, easy-to-run Twitter (X) sentiment analysis system built using the Sentiment140 dataset.**
 
@@ -13,11 +13,6 @@
 * [Installation](#installation)
 * [Dataset](#dataset)
 * [Run / Usage](#run--usage)
-* [How the Model Works (high level)](#how-the-model-works-high-level)
-* [Retrain / Rebuild](#retrain--rebuild)
-* [Troubleshooting](#troubleshooting)
-* [Contributing](#contributing)
-* [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -86,8 +81,30 @@ source .venv/bin/activate
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
+
 # 3. Install dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
 
+```
+## Dataset
+
+This project uses the Sentiment140 dataset from Kaggle:
+https://www.kaggle.com/datasets/kazanova/sentiment140
+
+Dataset Info:
+
+1,600,000 tweets
+
+Labeled as:
+
+* 0 → Negative
+
+* 2 → Neutral
+
+* 4 → Positive
+
+## Run / Usage
+
+jupyter notebook x_analysis.ipynb
 
